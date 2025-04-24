@@ -1,5 +1,8 @@
 import fetchData from './callback';
 
+
+
+// TEST
 test('fetchData calls the callback with the correct message', (done) => {
     function callback(data) {
         try {
