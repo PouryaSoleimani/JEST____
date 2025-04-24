@@ -1,8 +1,6 @@
 import minus from "./minus";
 
-test("MINUS OF TWO NUMBERS", () => {
+test('MINUS TWO NUMBERS', () => {
     expect(typeof (minus)).toBe("function");
-    expect(minus(20, 10)).toBe(10);
+    expect(minus(30, 20)).toBe(10);
 });
-
-
