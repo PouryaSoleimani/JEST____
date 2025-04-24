@@ -1,5 +1,5 @@
-export default function fetchData(callBack) {
+export default function fetchData(callback) {
   setTimeout(() => {
-    callBack("PEANUT BUTTER");
+    callback("HELLO FROM CALLBACK");
   }, 1000);
 }

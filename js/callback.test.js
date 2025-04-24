@@ -1,9 +1,15 @@
-import fetchData from "./callback";
+import fetchData from './callback';
 
-test('LOGGING TEST', () => {
-    function Logger(sentence) {
-        console.info(sentence);
+test('fetchData calls the callback with the correct message', (done) => {
+    function callback(data) {
+        try {
+            expect(data).toBe('HELLO FROM CALLBACK');
+            done(); // Signal that the test is complete
+        } catch (error) {
+            done(error); // Fail the test if an error is thrown
+        }
     }
-    expect(typeof (fetchData)).toBe("function");
-    expect(fetchData(Logger)).toBeEnabled;
+
+    fetchData(callback);
 });
+
