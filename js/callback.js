@@ -1,10 +1,5 @@
-
-
-
-
 export default function fetchData(callBack) {
-    setTimeout(() => {
-        callBack("PEANUT BUTTER");
-    }, 1000);
-
+  setTimeout(() => {
+    callBack("PEANUT BUTTER");
+  }, 1000);
 }
