@@ -1,6 +1,6 @@
 import sum from "./sum";
 
-test("JUST SUM TWO NUMBERS", () => {
+test("SUM OF TWO NUMBES", () => {
     expect(typeof (sum)).toBe("function");
-    expect(sum(10, 20)).toBe(30);
+    expect(sum(30, 30)).toBe(60);
 });
