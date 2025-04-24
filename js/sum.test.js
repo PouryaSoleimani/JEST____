@@ -1,5 +1,6 @@
-import {sum} from "./sum";
+import sum from "./sum";
 
 test('properly adds two numbers', () => {
-    expect(sum(1, 2).toBe(3));
+    expect(typeof sum).toBe('function');
+    expect(sum(1, 2)).toBe(3);
 });
