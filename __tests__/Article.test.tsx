@@ -2,10 +2,8 @@ import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import Article from "@/components/Article";
 
-describe("ARTICLE COMPONENT MUST HAVE ARTICLE TEXT IN IT ", () => {
-  test("renders a sentence in DOM", () => {
-    render(<Article />);
-    const ArticleTitle = screen.getByText("ARTICLE");
-    expect(ArticleTitle).toBeInTheDocument();
-  });
+test("should renders a heading", () => {
+  render(<Article />);
+  const myHeading = screen.getByRole("heading");
+  expect(myHeading).toBeInTheDocument()
 });

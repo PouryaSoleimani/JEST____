@@ -1,4 +1,3 @@
-//^ JEST CONFIG FILE
 import type { Config } from "jest";
 import nextJest from "next/jest.js";
 
@@ -92,7 +91,7 @@ const config: Config = {
   //   "node"
   // ],
 
-  //^ A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
+  // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     "^@/components/(.*)$": "<rootDir>/components/$1",
   },
@@ -201,9 +200,6 @@ const config: Config = {
   // watchman: true,
 };
 
-module.exports = {
-  setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
-  // ... other configurations
-};
+// module.exports = { setupFilesAfterEnv: ["<rootDir>/jest.setup.js"] };
 
 export default createJestConfig(config);
