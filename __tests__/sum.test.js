@@ -25,3 +25,28 @@ test('COMPARING TWO OBJECTS', () => {
   const obj2 = { a: 1, b: 2 };
   expect(obj1).toStrictEqual(obj2);
 })
+
+// TRUTHY AND FALSY VALUES
+describe("TRUTHY AND FALSY VALUES", () => {
+  const n = null;
+  test("should be falsy", () => {
+    expect(n).toBeFalsy();
+  })
+  // toBeGreaterThan()
+  // toBeLessThan()
+  // toBeGreaterThanOrEqual()
+  // toBeLessThanOrEqual()  
+
+  test("should be greater than", () => {
+    expect(10).toBeGreaterThan(5);
+  })
+  test("should be less than", () => {
+    expect(10).toBeLessThan(15);
+  })
+  test("should be greater than or equal", () => {
+    expect(10).toBeGreaterThanOrEqual(10);
+  })
+  test("should be less than or equal", () => {
+    expect(10).toBeLessThanOrEqual(10);
+  })
+})
