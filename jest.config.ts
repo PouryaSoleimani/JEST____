@@ -6,6 +6,7 @@ const createJestConfig = nextJest({
   dir: './',
 });
 
+//^ CONFIGURATIONS
 const config: Config = {
   // All imported modules in your tests should be mocked automatically
   automock: false,
@@ -33,7 +34,7 @@ const config: Config = {
   //   "\\\\node_modules\\\\"
   // ],
 
-  // Indicates which provider should be used to instrument code for coverage
+  //^ Indicates which provider should be used to instrument code for coverage
   coverageProvider: "v8",
 
   // A list of reporter names that Jest uses when writing coverage reports
@@ -148,7 +149,7 @@ const config: Config = {
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
   // snapshotSerializers: [],
 
-  // The test environment that will be used for testing
+  //^ The test environment that will be used for testing
   testEnvironment: "jsdom",
 
   // Options that will be passed to the testEnvironment
@@ -198,6 +199,7 @@ const config: Config = {
   // Whether to use watchman for file crawling
   // watchman: true,
 };
+
 
 module.exports = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
