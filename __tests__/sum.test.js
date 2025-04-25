@@ -7,7 +7,7 @@ import sum from "../js/sum";
 // });
 
 
-//  WE USE DESCRIBE WHEN WE WANT TO TEST MULTIPLE TESTS
+//  WE USE DESCRIBE WHEN WE WANT TO TEST MULTIPLE TESTS ===============================================================================================================================================
 describe("sum", () => {
   test("should be a function", () => {
     expect(typeof sum).toBe("function");
@@ -19,24 +19,26 @@ describe("sum", () => {
 })
 
 
-//  COMPARING TO OBJECTS
+//  COMPARING TO OBJECTS ===============================================================================================================================================
 test('COMPARING TWO OBJECTS', () => {
   const obj1 = { a: 1, b: 2 };
   const obj2 = { a: 1, b: 2 };
   expect(obj1).toStrictEqual(obj2);
 })
 
-// TRUTHY AND FALSY VALUES
+// TRUTHY AND FALSY VALUES ===============================================================================================================================================
 describe("TRUTHY AND FALSY VALUES", () => {
   const n = null;
   test("should be falsy", () => {
     expect(n).toBeFalsy();
   })
+
+  // NUMBERS ============================================================================================================================================================+++
   // toBeGreaterThan()
   // toBeLessThan()
   // toBeGreaterThanOrEqual()
   // toBeLessThanOrEqual()  
-
+  //toBeCloseTo()
   test("should be greater than", () => {
     expect(10).toBeGreaterThan(5);
   })
@@ -48,5 +50,35 @@ describe("TRUTHY AND FALSY VALUES", () => {
   })
   test("should be less than or equal", () => {
     expect(10).toBeLessThanOrEqual(10);
+  })
+})
+
+// STRINGS ===============================================================================================================================================
+describe("STRINGS", () => {
+  const str = "hello";
+  test("should be hello", () => {
+    expect(str).toBe("hello");
+  })
+  const str2 = "hello";
+  const str3 = "hellofromjest"
+  test("should be hello", () => {
+    expect(str2).toBe("hello");
+  })
+  test("should contain hello", () => {
+    expect(str2).toContain("hello");
+  })
+  test("should start with hello", () => {
+    expect(str3).toMatch(/^hello/);
+  })
+  test("should end with hello", () => {
+    expect(str3).toMatch(/jest$/);
+  })
+})
+
+// ARRAYS ===============================================================================================================================================
+describe("ARRAYS", () => {
+  const arr = [1, 2, 3];
+  test("should be [1, 2, 3]", () => {
+    expect(arr).toStrictEqual([1, 2, 3]);
   })
 })
