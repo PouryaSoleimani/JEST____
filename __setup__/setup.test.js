@@ -3,6 +3,11 @@ const animals = ["cat", "dog", "mouse", "rabbit", "elephant"]
 
 beforeEach(() => {
     animals = ["cat", "dog", "mouse", "rabbit", "elephant"]
+    console.log("BEFORE EACH ______________________")
+})
+
+afterEach(() => {
+    console.log("AFTER EACH ______________________")
 })
 
 
