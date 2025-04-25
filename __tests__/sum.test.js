@@ -7,7 +7,7 @@ import sum from "../js/sum";
 // });
 
 
-// ^ WE USE DESCRIBE WHEN WE WANT TO TEST MULTIPLE TESTS
+//  WE USE DESCRIBE WHEN WE WANT TO TEST MULTIPLE TESTS
 describe("sum", () => {
   test("should be a function", () => {
     expect(typeof sum).toBe("function");
@@ -19,6 +19,7 @@ describe("sum", () => {
 })
 
 
+//  COMPARING TO OBJECTS
 test('COMPARING TWO OBJECTS', () => {
   const obj1 = { a: 1, b: 2 };
   const obj2 = { a: 1, b: 2 };
