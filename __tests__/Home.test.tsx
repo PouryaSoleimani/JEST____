@@ -3,11 +3,8 @@ import Home from "@/app/page";
 import '@testing-library/jest-dom';
 
 
-test("SHOULD HAVE JEST TRAINING TEXT", () => {
-    render(<Home />); // ARRANGE
-
-    const myElement = screen.getByText("JEST TRAINING"); //ACT
-
-    expect(myElement).toBeInTheDocument(); // ASSERT
-
-});
+test("SHOULD HAVE THE WORD JEST IN THE DOM", () => {
+    render(<Home />);
+    const myElement = screen.getByText("JEST TRAINING COURSE");
+    expect(myElement).toBeInTheDocument();
+}); 
