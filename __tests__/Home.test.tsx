@@ -10,6 +10,7 @@ test("SHOULD HAVE THE WORD JEST IN THE DOM", () => {
     const myElement = screen.getByRole("heading", {
         name: "JEST TRAINING COURSE"
     });
+    let number = 1;
     expect(myElement).toBeInTheDocument();
 
 
