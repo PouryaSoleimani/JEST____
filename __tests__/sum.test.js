@@ -1,4 +1,4 @@
-import sum from "../js/sum";
+import sum from "../__js__/sum";
 
 // test("should add two numbers", () => {
 //   expect(typeof sum).toBe("function")
