@@ -6,4 +6,5 @@ describe("animals", () => {
     test("Should Return an Array", () => { expect(animals).toBeInstanceOf(Array) })
     test("Should Return an Array", () => { expect(animals).toHaveLength(5) });
     test("Should add a new animal", () => { expect(animals.push("giraffe")).toHaveLength(6) });
+    test("check if the item is added", () => { expect(animals).toContain("giraffe") })
 })
