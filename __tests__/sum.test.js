@@ -88,3 +88,13 @@ test("SHOULD SEARCH AN ARRAY FOR A WORD", () => {
   expect(typeof shoppingList).toBe("object");
   expect(shoppingList).toContain("eggs")
 })
+
+// ERROS ===============================================================================================================================================
+function compileAndroidCode() {
+  throw new Error("WRONG JDK !")
+}
+describe("THROWING AN ERROR", () => {
+  test("ARROW THROWING", () => {
+    expect(() => { compileAndroidCode() }).toThrow(new Error("WRONG JDK !"))
+  })
+})
