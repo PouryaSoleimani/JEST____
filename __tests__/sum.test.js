@@ -82,3 +82,9 @@ describe("ARRAYS", () => {
     expect(arr).toStrictEqual([1, 2, 3]);
   })
 })
+
+test("SHOULD SEARCH AN ARRAY FOR A WORD", () => {
+  const shoppingList = ["milk", "ice-cream", "coca", "eggs", "bread"]
+  expect(typeof shoppingList).toBe("object");
+  expect(shoppingList).toContain("eggs")
+})
