@@ -199,4 +199,8 @@ const config: Config = {
   // watchman: true,
 };
 
+module.exports = {
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  // ... other configurations
+};
 export default createJestConfig(config);
