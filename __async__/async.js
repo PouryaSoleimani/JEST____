@@ -8,5 +8,5 @@ export default async function fetchData(id) {
 }
 
 
-
+fetchData(1)
 
