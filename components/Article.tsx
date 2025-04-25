@@ -1,9 +1,8 @@
 import Image from "next/image";
-// import LoginForm from "./ui/loginForm";
 import logo from "../public/jest.svg";
 import signInHero from "@/public/next.svg";
 
-export default function Home() {
+export default function Article() {
   return (
     <main className=" h-screen flex flex-col">
       <div className="flex flex-col md:flex-row gap-16 md:gap-36">
@@ -15,6 +14,7 @@ export default function Home() {
             className="hidden md:block"
           />
         </div>
+        <h2>ARTICLE</h2>
       </div>
     </main>
   );
