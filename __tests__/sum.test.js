@@ -17,3 +17,10 @@ describe("sum", () => {
     expect(result).toBe(3);
   })
 })
+
+
+test('COMPARING TWO OBJECTS', () => {
+  const obj1 = { a: 1, b: 2 };
+  const obj2 = { a: 1, b: 2 };
+  expect(obj1).toStrictEqual(obj2);
+})
