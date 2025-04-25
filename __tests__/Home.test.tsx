@@ -8,5 +8,6 @@ test("SHOULD HAVE JEST TRAINING TEXT", () => {
 
     const myElement = screen.getByText("JEST TRAINING"); //ACT
 
-    expect(myElement).toBeInTheDocument();
+    expect(myElement).toBeInTheDocument(); // ASSERT
+
 });
