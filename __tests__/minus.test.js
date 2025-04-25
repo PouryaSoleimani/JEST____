@@ -1,6 +1,6 @@
-import minus from "../js/minus";    
+import minus from "../__js__/minus";
 
 test('MINUS TWO WORDS', () => {
-  const result = minus(1, 2);
-  expect(result).toBe(-1);
+  const result = minus(2, 1);
+  expect(result).toBe(1);
 })  
