@@ -6,6 +6,6 @@ test("should renders a heading", () => {
   render(<Article />);
   // const myHeading = screen.getByRole("heading");
   // const myHeading = screen.getByText("heading");
-  const myHeading = screen.getByTestId("test-id-heading");
+  const myHeading = screen.getByTestId("heading");
   expect(myHeading).toBeInTheDocument();
 });

@@ -7,7 +7,7 @@ export default function Home() {
       <h1 className="bg-orange-600 w-full text-3xl font-bold text-center py-6 text-black rounded">
         JEST TRAINING COURSE
       </h1>
-      <Article/>
+      <Article />
     </div>
   );
 }
