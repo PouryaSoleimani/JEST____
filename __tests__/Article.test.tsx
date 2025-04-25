@@ -4,6 +4,8 @@ import Article from "@/components/Article";
 
 test("should renders a heading", () => {
   render(<Article />);
-  const myHeading = screen.getByRole("heading");
-  expect(myHeading).toBeInTheDocument()
+  // const myHeading = screen.getByRole("heading");
+  // const myHeading = screen.getByText("heading");
+  const myHeading = screen.getByTestId("test-id-heading");
+  expect(myHeading).toBeInTheDocument();
 });

@@ -14,7 +14,7 @@ export default function Article() {
             className="hidden md:block"
           />
         </div>
-        <h2>ARTICLE</h2>
+        <h2 test-id="test-id-heading">ARTICLE</h2>
       </div>
     </main>
   );
