@@ -21,7 +21,12 @@ export default function Article() {
             alt="lendSqr hero"
             className="hidden md:block"
           />
-          <Link href="/test-page">LINK</Link>
+          <Link
+            href="/test-page"
+            className="bg-orange-500 p-3 rounded text-white"
+          >
+            LINK
+          </Link>
         </div>
       </div>
     </main>
