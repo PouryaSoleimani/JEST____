@@ -1,4 +1,4 @@
-import minus from "./minus"
+import minus from "../JS/minus"
 
 test('MINUS TWO WORDS', () => {
   const result = minus(2, 1);
