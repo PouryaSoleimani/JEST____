@@ -18,6 +18,7 @@ describe('OBJECT TESTING', () => {
         expect(obj).toHaveProperty('certifications');
         expect(obj).toHaveProperty('projects');
     });
+    
     it("should have the correct types for properties", () => {
         const obj = objects();
         expect(typeof obj.id).toBe('number');
