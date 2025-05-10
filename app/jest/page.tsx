@@ -1,11 +1,11 @@
 import React from 'react';
 
-const page : React.FC= () => {
-    return (
-        <div>
-            <h1>JEST TUTORIAL</h1>
-        </div>
-    );
+function page() {
+	return (
+		<div>
+			<h1>JEST TUTORIAL</h1>
+		</div>
+	)
 };
 
 export default page;
