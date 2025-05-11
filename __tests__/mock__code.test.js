@@ -10,22 +10,13 @@ jest.mock('../__JS__/mock__service', () => ({
     sendEmail: jest.fn(),
 }));
 
-it("SHOULD CALCULATE THE DISCOUNT" ,() => {
-        sendEmail.mockClear();
-        getUserById.mockReturnValue({
-            id: 1,
-            name: 'John',
-            email: 'john@gmail.com',
-            purchaseCount: 5,
-        });
-    })
 
-    it("SHOULD SEND AN EMAIL TO THE USER" ,() => {
 
-    })
-    it("SHOULD NOT SEND AN EMAIL TO THE USER" ,() => {
-        
-    })
+
+// ^ TESTS
+it('SHOULD CALCULATE THE DISCOUNT', () => {})
+it('SHOULD SEND AN EMAIL TO THE USER', () => {})
+it('SHOULD NOT SEND AN EMAIL TO THE USER', () => {})
 
 
  
