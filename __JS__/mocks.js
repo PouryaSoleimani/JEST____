@@ -14,8 +14,10 @@ export function sendEmail(name, message) {
 console.info(`Sending email to ${name} with message: ${message}`)
 }
 
-export function sendWelcomeEmail(name, email) {
-console.info(`Sending welcome email to ${name} at ${email}`)
-const message = 'Welcome to our platform!'
-sendEmail(name, message)
+// ^ SEND WELCOME EMAIL
+export function sendWelcomeEmail(name, discount, email) {
+	console.info(`Sending welcome email to ${name} at ${email}`)
+	const message = 'Welcome to our platform!'
+	const discountMessage = `You Got ${discount}% off your first purchase!`
+	sendEmail(name, message, discountMessage)
 }
