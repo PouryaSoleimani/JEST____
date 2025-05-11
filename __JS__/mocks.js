@@ -1,23 +1,9 @@
-
-// ^ GET USER
-export function getUserByID(id) {
-console.info("READING FROM DATABASE")
+export function getUserById(id) {
+console.info("READING DATA FROM DB");
 const users = [
-	{ id: 1, name: 'John Doe', email: 'john@example.com' },
-	{ id: 2, name: 'Jane Doe', email: 'jane@example.com' }
+	{ id: 1, name: 'John', email: 'john@gmail.com' },
+	{ id: 2, name: 'Jane', email: 'jane@gmail.com' },
+	{ id: 3, name: 'Bob', email: 'bob@gmail.com' }
 ]
 return users.find(user => user.id === id)
-}
-
-// ^ SEND EMAIL
-export function sendEmail(name, message) {
-console.info(`Sending email to ${name} with message: ${message}`)
-}
-
-// ^ SEND WELCOME EMAIL
-export function sendWelcomeEmail(name, discount, email) {
-	console.info(`Sending welcome email to ${name} at ${email}`)
-	const message = 'Welcome to our platform!'
-	const discountMessage = `You Got ${discount}% off your first purchase!`
-	sendEmail(name, message, discountMessage)
 }
