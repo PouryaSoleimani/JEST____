@@ -6,7 +6,7 @@ export function calculateDiscount (id){
 	let discount = 0
 	if (user.purchaseCount > 3) {
 		discount = 10
-		sendEmail(user.name, `You have a discount of ${discount}%`)
+		sendEmail(user.name.toString(), `You have a discount of ${discount}%`)
 		return discount
 	} else {
 		return 0

@@ -2,7 +2,7 @@
 export function getUserById(id) {
 console.info("READING DATA FROM DB");
 const users = [
-	{ id: 1, name: 'John', email: 'john@gmail.com', purchaseCount: 2 },
+	{ id: 1, name: 'John', email: 'john@gmail.com', purchaseCount: 6 },
 	{ id: 2, name: 'Jane', email: 'jane@gmail.com', purchaseCount: 3 },
 	{ id: 3, name: 'Bob', email: 'bob@gmail.com', purchaseCount: 5 },
 	{ id: 4, name: 'Alice', email: 'alice@gmail.com', purchaseCount: 1 },
@@ -14,6 +14,5 @@ return users.find(user => user.id === id)
 
 //^ SEND EMAIL
 export function sendEmail (name , message){
-	console.info('EMAIL SENT !')
-	console.log(`Email sent to ${name} with message: ${message}`)
+	return `Email sent to ${name} with message: ${message}`
 }
