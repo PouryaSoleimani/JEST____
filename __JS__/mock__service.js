@@ -11,6 +11,6 @@ return users.find(user => user.id === id)
 
 //^ SEND EMAIL
 export function sendEmail (name , message){
-	console.info("EMAIL SENT !")
-	console.log(`Email sent to ${name} with message: ${message}`);
+	console.info('EMAIL SENT !')
+	console.log(`Email sent to ${name} with message: ${message}`)
 }
