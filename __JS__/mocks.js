@@ -1,5 +1,5 @@
 
-
+// ^ GET USER
 export function getUserByID(id) {
 console.info("READING FROM DATABASE")
 const users = [
@@ -9,6 +9,7 @@ const users = [
 return users.find(user => user.id === id)
 }
 
+// ^ SEND EMAIL
 export function sendEmail(name, message) {
 console.info(`Sending email to ${name} with message: ${message}`)
 }
