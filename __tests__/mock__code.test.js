@@ -6,8 +6,13 @@ import { getUserById, sendEmail } from '../__JS__/mock__service';
 
 // ^ MOCKING THE FUNCTIONS
 jest.mock('../__JS__/mock__service', () => ({
-    getUserById: jest.fn(),
     sendEmail: jest.fn(),
+    getUserById: jest.fn().mockReturnValue({
+        id: 1,
+        name: 'John',
+        email: 'john@gmail.com',
+        purchaseCount: 2,
+    })
 }));
 
 
@@ -19,4 +24,4 @@ it('SHOULD SEND AN EMAIL TO THE USER', () => {})
 it('SHOULD NOT SEND AN EMAIL TO THE USER', () => {})
 
 
- 
+  
