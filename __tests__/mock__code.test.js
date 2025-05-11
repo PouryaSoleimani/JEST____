@@ -20,7 +20,7 @@ jest.mock('../__JS__/mock__service', () => ({
 
 describe('calculateDiscount', () => {
 	it('SHOULD RETURN 10% DISCOUNT', () => {
-	sendEmail: jest.fn(),
+	sendEmail: jest.fn();
     getUserById: jest.fn().mockReturnValue({
       id: 1,
       name: 'John',
