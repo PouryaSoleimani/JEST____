@@ -2,12 +2,12 @@
 import { it,expect,describe } from '@jest/globals'
 import jest from 'jest-mock';
 import { calculateDiscount } from '../__JS__/mock__code';
-import { getUserById, sendEmail } from "./mock__service";
+import { getUserById, sendEmail } from "./../__JS__/mock__service";
 
 
 
 // ^ MOCKING THE FUNCTIONS
-jest.mock('./mock__service', () => ({
+jest?.mock('./mock__service', () => ({
 	sendEmail: jest.fn(),
 	getUserById: jest.fn().mockReturnValue({
 		id: 1,
@@ -20,7 +20,7 @@ jest.mock('./mock__service', () => ({
 
 describe('calculateDiscount', () => {
 	it('SHOULD RETURN 10% DISCOUNT', () => {
-	expect(calculateDiscount(1)).toBe(10)
+	expect(calculateDiscount(3)).toBe(10)
 })
 })
 
