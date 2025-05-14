@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+ 
 import { jest, it, expect, describe } from '@jest/globals'
-import { getUserById, sendEmail } from '../__JS__/mock__service'
 import { calculateDiscount } from '../__JS__/mock__code'
 
 // ^ MOCKING THE FUNCTIONS
